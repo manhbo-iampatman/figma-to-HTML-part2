@@ -1,0 +1,525 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ================================== common =================================== */
+a {
+  text-decoration: none;
+}
+
+.main-content {
+  width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: calc(100% - 48px);
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  padding: 0 16px;
+  min-width: 186px;
+  line-height: 68px;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-radius: 14px;
+  background: #1ebfc1;
+}
+
+.heading-lv1 {
+  color: #0d1111;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.33; /* 133.333% */
+  letter-spacing: -0.76px;
+}
+
+/* ================================== header =================================== */
+.header {
+  background-color: #fff;
+  z-index: 20;
+  border-bottom: 1px solid black;
+}
+
+.header.fixed {
+  position: sticky;
+  top: -50px;
+}
+
+.header .body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 56px 0 8px;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav a {
+  color: #2f3a3b;
+  font-size: 1.6rem;
+  padding: 8px 19.5px;
+  position: relative;
+}
+
+.nav li.active a,
+.nav a:hover {
+  color: #2f3a3b;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.nav li.active a::after {
+  display: block;
+  content: "";
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background: #171100;
+  position: absolute;
+  left: 19.5px;
+  bottom: 6px;
+}
+
+.header .btn-sign-up {
+  min-width: 108px;
+  line-height: 48px;
+  color: #1ebfc1;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: px;
+  border: 1px solid #1ebfc1;
+  background: #fff;
+}
+
+.header .alone {
+  color: #494949;
+  font-size: 1.6rem;
+  padding: 8px 12px;
+}
+
+.header .action a:hover {
+  color: #2f3a3b;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+/* =============================== Hero ================================= */
+
+.hero {
+  padding: 54px 0 65px;
+}
+
+.hero .body {
+  display: flex;
+}
+/*============================== Hero left ===============================*/
+.hero .content-block {
+  width: 52%;
+  padding-right: 71px;
+}
+
+.hero .desc {
+  margin-top: 92px;
+  color: #767e7e;
+  font-size: 14px;
+}
+
+.hero .heading {
+  width: 458px;
+  color: #0d1111;
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: 1.17; /* 116.129% */
+  margin-top: 18px;
+}
+
+.hero .des2 {
+  width: 374px;
+  color: #9da6a5;
+  font-size: 1.8rem;
+  line-height: 1.78; /* 177.778% */
+  margin-top: 46px;
+}
+
+.hero .cta-group {
+  margin: 52px auto 0;
+}
+
+.hero .cta-group .play {
+  border: none;
+  background: transparent;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.hero .cta-group .icon {
+  width: 62px;
+  height: 62px;
+  border-radius: 62px;
+  background: #fff;
+  box-shadow: 0px 22px 50px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*============================== Hero right ===============================*/
+
+.hero .media-block {
+  width: 48%;
+  position: relative;
+}
+
+.hero .img {
+  width: 576px;
+  height: 631px;
+  object-fit: cover;
+}
+
+/* ===================================BOX 1 =================================== */
+
+.hero .hero-summary {
+  position: absolute;
+  width: 157px;
+  bottom: 407px;
+  left: -25px;
+  border-radius: 18px;
+  background: #fefefd;
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+  padding: 16px;
+}
+
+.hero-summary .item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+}
+
+.hero .item .row {
+  position: absolute;
+  bottom: 8px;
+  left: 4px;
+}
+
+.hero-summary .info .title {
+  color: #0d1111;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* ================================== BOX 2 ===================================== */
+
+.hero .wtf {
+  position: absolute;
+  right: 45px;
+  bottom: 41px;
+  display: flex;
+}
+
+.hero .wtf .item2 {
+  width: 207px;
+  height: 90px;
+  border-radius: 24px;
+  align-items: center;
+  background: #fefefd;
+  box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+  overflow: visible;
+}
+
+.wtf .item2 .member {
+  margin: 0;
+  color: #0d1111;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 15px 72px 8px 25px;
+}
+
+.wtf .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 207px;
+  height: 40px;
+}
+
+.wtf .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid transparent; /* viền trắng giữa các ảnh */
+  margin-left: -10px; /* giúp các ảnh đè lên nhau */
+  position: relative;
+  z-index: 1;
+}
+
+.wtf .img .friend {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wtf .img .friend-5 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1ebfc1;
+}
+
+.wtf .friend-1 {
+  background: #1ebfc1;
+}
+
+.wtf .friend-2 {
+  background: #ffc147;
+}
+
+.wtf .friend-3 {
+  background: #ff947a;
+}
+
+.wtf .friend-4 {
+  background: #bf83ff;
+}
+
+/* ================================== BOX 3 ===================================== */
+.hero .box3 {
+  position: absolute;
+  bottom: 46px;
+  left: -40px;
+  display: flex;
+}
+
+.box3 .item3 {
+  width: 124px;
+  height: 132px;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.box3 .item3 .manhbo {
+  color: #0d1111;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 16px;
+}
+
+.box3 .icon2 {
+  width: 74px;
+  height: 6px;
+  margin: 16px auto 23px;
+}
+
+.box3 .icon2 .row-different {
+  margin-top: 16px;
+}
+
+/* ================================== features ===================================== */
+.features {
+  padding: 50px 0;
+  background-color: #fff;
+  margin-top: 80px;
+}
+
+.features-top .ft {
+  color: #767e7e;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.features-top .theh1 {
+  width: 577px;
+  margin: 18px 0;
+}
+
+.features-top .desc {
+  color: #767e7e;
+  font-size: 1.8rem;
+  font-weight: 400;
+  width: 590px;
+}
+
+.features .features-bottom {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.features .features-bottom .icon {
+  height: 106px;
+}
+
+.features-bottom .title {
+  color: #0d1111;
+  font-size: 2rem;
+  font-weight: 600;
+  width: 101px;
+  height: 30px;
+  margin: 26px 0 16px;
+}
+
+.features-bottom .desc {
+  color: #9da6a5;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.69; /* 168.75% */
+  width: 168px;
+}
+
+.features-bottom .p2 {
+  width: 223px;
+}
+
+.features-bottom .p3 {
+  width: 224px;
+}
+
+/* ================================== Popular ===================================== */
+.popular {
+  padding: 50px 0;
+  background-color: #fff;
+  margin-top: 80px;
+}
+
+.popular-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular-top .course {
+  color: #767e7e;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.popular-top .theh1 {
+  width: 356px;
+  margin: 18px 0;
+}
+
+.popular-top .info .desc {
+  color: #767e7e;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.78; /* 177.778% */
+  width: 525px;
+}
+
+.popular-top .active {
+  margin-top: 125px;
+}
+
+.popular-top .active .action {
+  color: #1ebfc1;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+}
+
+.popular-top .active a:hover {
+  color: #2f3a3b;
+  text-shadow: 0.5px 0 0 currentColor;
+}
+
+.popular .course-list {
+  margin-top: 79px;
+  gap: 47px;
+  display: flex;
+}
+
+.popular .course-item {
+  position: relative;
+}
+
+.popular .course-item .thumb {
+  height: 393px;
+  width: 359px;
+  object-fit: cover;
+  border-radius: 8px;
+  opacity: 0.9;
+  background: #d0efed;
+}
+
+.popular .course-item .info {
+  position: absolute;
+  width: 325px;
+  height: 195px;
+  bottom: -150px;
+  right: 17px;
+  border-radius: 8px;
+  border: 1px solid #e2dfda;
+  background: #fff;
+  padding: 16px 22px 22px;
+}
+
+.popular .course-item .info:hover {
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 16px 90px 0 rgba(0, 0, 0, 0.05);
+}
+
+.popular .course-item .title {
+  color: #0d1111;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.popular .course-item .body {
+  margin-top: 24px;
+}
+
+.course-item .body .fee-text {
+  color: #767e7e;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.course-item .body strong {
+  color: #0d1111;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.course-item .body .desc {
+  color: #9da6a5;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-top: 6px;
+}
+
+.course-item .foot {
+  display: flex;
+  margin-top: 25px;
+  gap: 10px;
+}
+
+.course-item .foot .word {
+  color: #9da6a5;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
