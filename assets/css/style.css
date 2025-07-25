@@ -523,3 +523,143 @@ a {
   font-size: 1.4rem;
   font-weight: 400;
 }
+
+/* ================================== Stats ===================================== */
+.stat {
+  padding: 80px 0;
+  margin-top: 120px;
+  background: #fff;
+}
+
+.section-stat {
+  display: flex;
+  justify-content: space-around;
+}
+
+.section-stat .dfe {
+  color: #0d1111;
+  font-size: 6.2rem;
+}
+
+.section-stat .desc {
+  color: #767e7e;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+/* ================================ Feedback ==================================*/
+.feedback {
+  margin-top: 124px;
+  padding: 60px 0;
+  background: #fff;
+}
+
+.feedback-items {
+  display: flex;
+}
+
+.feedback .content {
+  width: 45%;
+}
+
+.feedback-items .head .open-quotes {
+  margin-top: 37px;
+}
+
+.feedback-items .head blockquote {
+  color: #5d6564;
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  width: 419px;
+  margin-top: 27px;
+}
+
+.feedback-items .content .desc {
+  color: #767e7e;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 33px;
+}
+
+.feedback-items .content strong {
+  color: #070707;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.feedback-items .foot .control-btn {
+  margin-top: 52px;
+  background: #fff;
+  border: none;
+}
+
+/* .feedback-items .foot .control-btn:hover {
+  background-color: greenyellow;
+  color: #fff;
+  cursor: pointer;
+} */
+
+.feedback .info {
+  width: 55%;
+  position: relative;
+}
+
+.feedback .info .network__member {
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid none;
+}
+
+.feedback .network__member img {
+  width: 100%;
+  display: block;
+}
+
+.feedback .info .center {
+  width: 200px;
+  height: 200px;
+  bottom: 138px;
+  left: 230px;
+  background-color: #ff947a;
+}
+
+.feedback .info .top-left {
+  width: 75px;
+  height: 75px;
+  left: 120px;
+  background-color: #1ebfc1;
+}
+
+.feedback .top-right {
+  width: 90px;
+  height: 90px;
+  left: 86%;
+  top: 19px;
+  background-color: #bf83ff;
+}
+
+.feedback .mid-left {
+  width: 70px;
+  height: 70px;
+  top: 55%;
+  background-color: #ffc147;
+}
+
+.feedback .bottom-left {
+  width: 70px;
+  height: 70px;
+  top: 84%;
+  left: 30%;
+  background-color: #ff947a;
+}
+
+.feedback .bottom-right {
+  width: 70px;
+  height: 70px;
+  top: 80%;
+  left: 84%;
+  background-color: #b1dfdc;
+}
