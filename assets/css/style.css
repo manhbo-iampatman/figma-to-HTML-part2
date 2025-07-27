@@ -44,6 +44,11 @@ a {
   letter-spacing: -0.76px;
 }
 
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
 /* ================================== header =================================== */
 .header {
   background-color: #fff;
@@ -589,17 +594,29 @@ a {
   font-weight: 500;
 }
 
-.feedback-items .foot .control-btn {
-  margin-top: 52px;
-  background: #fff;
-  border: none;
+.feedback-items .foot {
+  display: flex;
+  gap: 18px;
 }
 
-/* .feedback-items .foot .control-btn:hover {
-  background-color: greenyellow;
+.feedback-items .foot .control-btn {
+  margin-top: 52px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2ac9bf;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.feedback-items .foot .control-btn:hover {
   color: #fff;
   cursor: pointer;
-} */
+  background-color: #85cb82;
+}
 
 .feedback .info {
   width: 55%;
@@ -651,7 +668,7 @@ a {
 .feedback .bottom-left {
   width: 70px;
   height: 70px;
-  top: 84%;
+  top: 83%;
   left: 30%;
   background-color: #ff947a;
 }
@@ -662,4 +679,88 @@ a {
   top: 80%;
   left: 84%;
   background-color: #b1dfdc;
+}
+
+/* ================================= Admit=============================== */
+.admit {
+  margin-top: 50px;
+  background: #def6f5;
+  padding: 30px 0;
+}
+
+.admit .items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.admit .left .heading-lv1 {
+  margin-top: 76px;
+}
+
+.admit .left .desc {
+  color: #767e7e;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 18px 0 88px;
+}
+
+.admit .right {
+  display: flex;
+  align-items: center;
+}
+
+/* ================================= Footer =============================== */
+.footer {
+  background: #ffffff;
+  padding: 0 135px;
+}
+
+.footer .row {
+  margin-top: 130px;
+  display: flex;
+  padding-bottom: 38px;
+  border-bottom: 1px solid #59554b;
+}
+
+.footer .row .column {
+  width: 20%;
+}
+
+.footer .column .title {
+  color: #2e2e2e;
+  font-size: 1.8rem;
+  font-weight: 500;
+  display: inline-block;
+  border-bottom: 1px solid #59554b;
+  padding-bottom: 14px;
+  padding-right: 40px;
+}
+
+.footer .column .list {
+  margin-top: 25px;
+}
+
+.footer .list a {
+  display: inline-block;
+  color: #535353;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.footer .column .iconic {
+  display: flex;
+  align-items: center;
+}
+
+.footer .list img {
+  margin-right: 9px;
+}
+
+.footer .copyright {
+  color: #b0b5b4;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 30px;
+  text-align: center;
 }
